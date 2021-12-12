@@ -54,8 +54,9 @@ We will evaluate you on your ability to solve the problem defined in the require
 If you have any questions regarding requirements, do not hesitate to email your contact at theScore for clarification.
 
 ### Installation and running this solution
-1. Open the Solution (TheScoreChallenge.sln) in Visual Studio.
-2. Right-click the project and select Publish
+1. Open the Solution (TheScoreChallenge.sln) in Visual Studio. At the top under Debug tab, make sure the dropdown is set to Release and not 
+   Debug. Once set to Release, Right-click the Solution (Under solution explorer 'Solution 'TheScoreChallenge'') and select rebuild Solution.
+2. When done rebuilding, Right-click the project (Under Solution Explorer 'TheScoreChallenge') and select Publish
 3. Click the new hyperlink, and select Folder as your target and enter a path to save the website in. Click Finish when done.
 4. Click the pencil icon under next to the Configuration field. Select Release under the dropdown for Configuration and click the Save button.
 5. Click the Publish button to publish the website to the folder specified in step 3.
