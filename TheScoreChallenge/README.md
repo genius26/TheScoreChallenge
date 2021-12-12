@@ -54,4 +54,21 @@ We will evaluate you on your ability to solve the problem defined in the require
 If you have any questions regarding requirements, do not hesitate to email your contact at theScore for clarification.
 
 ### Installation and running this solution
-... TODO
+1. Open the Solution (TheScoreChallenge.sln) in Visual Studio.
+2. Right-click the project and select Publish
+3. Click the new hyperlink, and select Folder as your target and enter a path to save the website in. Click Finish when done.
+4. Click the pencil icon under next to the Configuration field. Select Release under the dropdown for Configuration and click the Save button.
+5. Click the Publish button to publish the website to the folder specified in step 3.
+6. Go to Control panel and select Programs. Then click Turn Windows features on or off under Programs and Features.
+7. Collapse .NET framework 4.8 Advanced Services and check ASP.NET 4.8 checkbox
+8. Collapse Internet Information Services then collapase Web Management Tools. Check all the boxes under Web Management Tools.
+9. Click the OK button when done. This will install the features if they don't exist. A reboot might be needed as well when done.
+10. Open Internet Information Services (IIS) Manager. Right-click sites and click Add website.
+11. Enter a site name. In Physical Path field, enter the path to the published website that we specified in step 3. In the Port
+    field, make sure the value doesn't exists in the other websites.
+12. In the Hostname field, enter TheScore.local. Click ok when done.
+13. Open the following path: C:/Windows/System32/Drivers/Etc and Open the Hosts file in notepad.
+14. Under # localhost name resolution is handled within DNS itself heading, type in 127.0.0.1 TheScore.local
+15. Open an internet browser and enter the following address: http://thescore.local:{PORT}/ where Port is the port number we set in step 11.
+    I.E. http://thescore.local:81/ . The webpage should show now.
+
